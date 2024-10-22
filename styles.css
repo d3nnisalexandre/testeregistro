@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d0d0d;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.register-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.register-container {
+    background-color: #8E24AA;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    position: relative;
+    z-index: 0;
+}
+
+.register-header h2 {
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.register-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: #218838;
+}
+
+.register-footer {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.register-footer p {
+    font-size: 14px;
+    color: #fff;
+}
+
+.register-footer a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+.register-footer a:hover {
+    text-decoration: underline;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -8px;
+    position: relative;
+    z-index: 1;
+}
+
+.image-outside {
+    width: 150px;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+    .register-container {
+        width: 250px;
+        padding: 15px;
+    }
+    
+    .image-outside {
+        width: 125px;
+    }
+    
+    .image-container {
+        margin-left: -8px;
+    }
+}
+
+@media (max-width: 450px) {
+    .register-container {
+        width: 200px;
+        padding: 10px;
+    }
+    
+    .image-outside {
+        width: 100px;
+        max-height: 300px;
+    }
+    
+    .image-container {
+        margin-left: -8px;
+    }
+}

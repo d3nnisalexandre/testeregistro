@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Anime</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="register-wrapper">
+        <div class="register-container">
+            <div class="register-header">
+                <h2>Registrar-se - Anime World</h2>
+            </div>
+            <div class="register-form">
+                <form action="register.php" method="POST">
+                    <input type="text" name="username" placeholder="Nome de usuário" required class="form-input">
+                    <input type="email" name="email" placeholder="Email" required class="form-input">
+                    <input type="password" name="password" placeholder="Senha" required class="form-input">
+                    <input type="password" name="confirm_password" placeholder="Confirmar senha" required class="form-input">
+                    <button type="submit" class="form-button">Registrar</button>
+                </form>
+            </div>
+            <div class="register-footer">
+                <p>Já tem uma conta? <a href="login.html">Entrar</a></p>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="img-removebg-preview.png" class="image-outside" alt="Imagem do Anime">
+        </div>
+    </div>
+</body>
+</html>
